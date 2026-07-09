@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Dark mode elegant base */
+  --bg: #0b0a0a;
+  --surface: #141110;
+  --surface2: #1e1917;
+  --surface-hover: #261f1c;
+  --border: #362821;
+  --border-hover: #523b31;
+  
+  /* Text */
+  --text: #fdfaf6;
+  --muted: #a69b97;
+  
+  /* Palette */
+  --copper: #c86f43;
+  --copper-glow: rgba(200, 111, 67, 0.25);
+  --rose-gold: #b76e79;
+  --champagne: #f7e7ce;
+  --amber: #ffbf00;
+
+  --nav-w: 240px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 14px; /* Accessible minimum */
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Background Noise Texture */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  z-index: 50;
+}
+
+/* Animated Gradient Orbs */
+.orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: -1;
+  opacity: 0.4;
+  animation: float 15s ease-in-out infinite alternate;
+}
+
+.orb-1 {
+  top: -10%;
+  left: -10%;
+  width: 40vw;
+  height: 40vw;
+  background: radial-gradient(circle, var(--copper) 0%, transparent 70%);
+}
+
+.orb-2 {
+  bottom: -10%;
+  right: -5%;
+  width: 35vw;
+  height: 35vw;
+  background: radial-gradient(circle, var(--rose-gold) 0%, transparent 70%);
+  animation-delay: -5s;
+}
+
+@keyframes float {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(5%, 10%); }
+}
+
+/* Typography */
+h1, h2, h3, .serif-title {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+/* Layout Grid */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: var(--nav-w);
+  position: fixed;
+  height: 100vh;
+  border-right: 1px solid var(--border);
+  padding: 32px 24px;
+  background: rgba(20, 17, 16, 0.7);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  z-index: 40;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: var(--nav-w);
+  padding: 48px;
+  max-width: 1100px;
+}
+
+@media (max-width: 768px) {
+  .app-container { flex-direction: column; }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 16px;
+  }
+  .main-content { margin-left: 0; padding: 24px; }
+}
+
+/* Components */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Hover Shimmer Line & Glow */
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--champagne), transparent);
+  transition: left 0.5s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--copper);
+  box-shadow: 0 8px 30px var(--copper-glow);
+}
+
+.card:hover::after {
+  left: 200%;
+  transition: left 0.7s ease;
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--copper);
+  outline-offset: 2px;
+}
+
+.badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: var(--surface2);
+  color: var(--champagne);
+  border: 1px solid var(--border);
+  display: inline-block;
+}
+
+.badge.high-impact {
+  background: rgba(200, 111, 67, 0.1);
+  color: var(--copper);
+  border-color: var(--copper);
+}
+
+.voucher-alert {
+  background: linear-gradient(135deg, var(--surface2) 0%, rgba(255, 191, 0, 0.05) 100%);
+  border: 1px solid var(--amber);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.voucher-alert .code {
+  font-family: 'DM Serif Display', serif;
+  font-size: 28px;
+  color: var(--amber);
+  margin-bottom: 8px;
+}

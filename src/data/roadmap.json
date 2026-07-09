@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "completed": 6,
+    "total": 34,
+    "progress": 18,
+    "hours": "2.357h",
+    "updatedAt": "2 jul 2026"
+  },
+  "comptiaVoucher": {
+    "code": "GGL30OFF30",
+    "discount": "30%",
+    "exam": "Security+ (SY0-701) & CertMaster Practice",
+    "note": "Importante: debes iniciar sesión en la tienda CompTIA ANTES de aplicar el código, o aparecerá como inválido"
+  },
+  "megaSections": [
+    {
+      "id": "google",
+      "title": "Beca Google",
+      "subtitle": "Talento Digital Chile · 12 cursos",
+      "count": "~1.247h · vence 12 jun 2027",
+      "icon": "🎓",
+      "courses": [
+        {
+          "id": "g1",
+          "name": "Google Cybersecurity",
+          "vendor": "Google",
+          "status": "in-progress",
+          "impact": "Alto",
+          "date": "Cierra ~5 jul 2026",
+          "hours": "133h",
+          "module": "5-6/9"
+        },
+        {
+          "id": "g2",
+          "name": "Análisis de Datos",
+          "vendor": "Google",
+          "status": "pending",
+          "impact": "Alto",
+          "date": "6 jul → 17 ago 2026",
+          "hours": "152h",
+          "badge": "Aplica a tu trabajo"
+        },
+        {
+          "id": "g3",
+          "name": "Análisis de Datos Avanzado",
+          "vendor": "Google",
+          "status": "pending",
+          "impact": "Alto",
+          "date": "18 ago → 29 sep 2026",
+          "hours": "153h",
+          "badge": "Nuevo 2026"
+        },
+        {
+          "id": "g4",
+          "name": "Automatización de TI con Python",
+          "vendor": "Google",
+          "status": "pending",
+          "impact": "Alto",
+          "date": "30 sep → 6 nov 2026",
+          "hours": "134h"
+        }
+      ]
+    },
+    {
+      "id": "ipss",
+      "title": "Academias IPSS",
+      "subtitle": "AWS · Cisco · Fortinet · Oracle · Red Hat",
+      "count": "22 cursos · ~1.110h",
+      "icon": "🏫",
+      "courses": [
+        {
+          "id": "i1",
+          "name": "Fortinet Certified Fundamentals (FCF)",
+          "vendor": "Fortinet",
+          "status": "done",
+          "impact": "Alto",
+          "date": "jun 2026"
+        },
+        {
+          "id": "i2",
+          "name": "AWS Cloud Foundations",
+          "vendor": "AWS",
+          "status": "done",
+          "impact": "Alto",
+          "date": "jun 2026",
+          "badge": "AWS Academy Graduate"
+        },
+        {
+          "id": "i3",
+          "name": "Linux Admin I & II",
+          "vendor": "Red Hat",
+          "status": "paused",
+          "impact": "Alto",
+          "date": "Esperando acceso",
+          "badge": "Ticket enviado"
+        }
+      ]
+    }
+  ]
+}
