@@ -33,7 +33,7 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: var(--bg);
   color: var(--text);
-  font-size: 14px; /* Accessible minimum */
+  font-size: 14px;
   line-height: 1.6;
   position: relative;
   overflow-x: hidden;
@@ -147,8 +147,18 @@ h1, h2, h3, .serif-title {
   gap: 12px;
 }
 
+.card-done {
+  background: var(--surface2);
+  border-color: var(--border);
+}
+.card-done:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--border-hover);
+}
+
 /* Hover Shimmer Line & Glow */
-.card::after {
+.card:not(.card-done)::after {
   content: '';
   position: absolute;
   top: 0;
@@ -159,13 +169,13 @@ h1, h2, h3, .serif-title {
   transition: left 0.5s ease;
 }
 
-.card:hover {
+.card:not(.card-done):hover {
   transform: translateY(-4px);
   border-color: var(--copper);
   box-shadow: 0 8px 30px var(--copper-glow);
 }
 
-.card:hover::after {
+.card:not(.card-done):hover::after {
   left: 200%;
   transition: left 0.7s ease;
 }
@@ -192,6 +202,11 @@ h1, h2, h3, .serif-title {
   border-color: var(--copper);
 }
 
+.badge.med-impact {
+  color: var(--amber);
+  border-color: var(--amber);
+}
+
 .voucher-alert {
   background: linear-gradient(135deg, var(--surface2) 0%, rgba(255, 191, 0, 0.05) 100%);
   border: 1px solid var(--amber);
@@ -206,4 +221,117 @@ h1, h2, h3, .serif-title {
   font-size: 28px;
   color: var(--amber);
   margin-bottom: 8px;
+}
+
+/* Info Box */
+.info-box {
+  padding: 16px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+.info-box.warning {
+  border-color: var(--copper);
+  color: var(--text);
+}
+
+/* Accordions */
+.accordion {
+  margin-bottom: 24px;
+}
+.accordion-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s ease;
+  list-style: none;
+}
+.accordion-summary::-webkit-details-marker {
+  display: none;
+}
+.accordion-summary:hover {
+  background: var(--surface2);
+}
+.accordion[open] .accordion-summary {
+  border-radius: 12px 12px 0 0;
+  border-bottom: 1px solid transparent;
+  background: var(--surface2);
+}
+.accordion-badge {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--champagne);
+  padding: 6px 14px;
+  background: rgba(247, 231, 206, 0.1);
+  border: 1px solid var(--champagne);
+  border-radius: 20px;
+}
+.accordion-desc {
+  font-size: 13px;
+  color: var(--muted);
+}
+.chevron {
+  font-size: 12px;
+  color: var(--muted);
+  transition: transform 0.3s ease;
+}
+.accordion-body {
+  padding: 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 12px 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Buffer tag */
+.buffer-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--surface2);
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+/* Current Course */
+.current-course {
+  background: linear-gradient(135deg, rgba(200, 111, 67, 0.1) 0%, var(--surface) 100%);
+  border: 1.5px solid var(--copper);
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 48px;
+  position: relative;
+  box-shadow: 0 0 0 1px rgba(200, 111, 67, 0.15), 0 0 24px rgba(200, 111, 67, 0.1);
+}
+.pulse-dot {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--copper);
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% { opacity: 1; box-shadow: 0 0 0 0 rgba(200, 111, 67, 0.6); }
+  70% { opacity: 0.7; box-shadow: 0 0 0 10px rgba(200, 111, 67, 0); }
+  100% { opacity: 1; box-shadow: 0 0 0 0 rgba(200, 111, 67, 0); }
 }

@@ -3,8 +3,9 @@
     "completed": 6,
     "total": 34,
     "progress": 18,
-    "hours": "2.357h",
-    "updatedAt": "2 jul 2026"
+    "hours": "~2.357h",
+    "updatedAt": "2 jul 2026",
+    "deadline": "12 jun 2027"
   },
   "comptiaVoucher": {
     "code": "GGL30OFF30",
@@ -12,89 +13,144 @@
     "exam": "Security+ (SY0-701) & CertMaster Practice",
     "note": "Importante: debes iniciar sesión en la tienda CompTIA ANTES de aplicar el código, o aparecerá como inválido"
   },
-  "megaSections": [
-    {
-      "id": "google",
-      "title": "Beca Google",
-      "subtitle": "Talento Digital Chile · 12 cursos",
-      "count": "~1.247h · vence 12 jun 2027",
-      "icon": "🎓",
-      "courses": [
-        {
-          "id": "g1",
-          "name": "Google Cybersecurity",
-          "vendor": "Google",
-          "status": "in-progress",
-          "impact": "Alto",
-          "date": "Cierra ~5 jul 2026",
-          "hours": "133h",
-          "module": "5-6/9"
-        },
-        {
-          "id": "g2",
-          "name": "Análisis de Datos",
-          "vendor": "Google",
-          "status": "pending",
-          "impact": "Alto",
-          "date": "6 jul → 17 ago 2026",
-          "hours": "152h",
-          "badge": "Aplica a tu trabajo"
-        },
-        {
-          "id": "g3",
-          "name": "Análisis de Datos Avanzado",
-          "vendor": "Google",
-          "status": "pending",
-          "impact": "Alto",
-          "date": "18 ago → 29 sep 2026",
-          "hours": "153h",
-          "badge": "Nuevo 2026"
-        },
-        {
-          "id": "g4",
-          "name": "Automatización de TI con Python",
-          "vendor": "Google",
-          "status": "pending",
-          "impact": "Alto",
-          "date": "30 sep → 6 nov 2026",
-          "hours": "134h"
-        }
-      ]
-    },
-    {
-      "id": "ipss",
-      "title": "Academias IPSS",
-      "subtitle": "AWS · Cisco · Fortinet · Oracle · Red Hat",
-      "count": "22 cursos · ~1.110h",
-      "icon": "🏫",
-      "courses": [
-        {
-          "id": "i1",
-          "name": "Fortinet Certified Fundamentals (FCF)",
-          "vendor": "Fortinet",
-          "status": "done",
-          "impact": "Alto",
-          "date": "jun 2026"
-        },
-        {
-          "id": "i2",
-          "name": "AWS Cloud Foundations",
-          "vendor": "AWS",
-          "status": "done",
-          "impact": "Alto",
-          "date": "jun 2026",
-          "badge": "AWS Academy Graduate"
-        },
-        {
-          "id": "i3",
-          "name": "Linux Admin I & II",
-          "vendor": "Red Hat",
-          "status": "paused",
-          "impact": "Alto",
-          "date": "Esperando acceso",
-          "badge": "Ticket enviado"
-        }
-      ]
-    }
-  ]
+  "focus2026": {
+    "title": "🎯 Enfoque 2026",
+    "subtitle": "Las 6 cosas que más importan este año · todo lo demás espera su turno",
+    "items": [
+      { "icon": "🎓", "name": "Avanzar en IPSS", "desc": "Completar exitosamente los trimestres 2 y 3. Fortalecer Programación, SQL y Bases de Datos." },
+      { "icon": "🔒", "name": "Completar Google Cybersecurity", "desc": "Finalizar certificación durante 2026. Preparar base para Security+." },
+      { "icon": "💻", "name": "Construir Portafolio GitHub", "desc": "Proyectos académicos. Landing pages. Automatizaciones Python." },
+      { "icon": "🇺🇸", "name": "Alcanzar Inglés B1", "desc": "Meta: 1 de octubre 2026. Duolingo + Agente IA + Score Test semanal." },
+      { "icon": "☁️", "name": "Primera cert. técnica", "desc": "✅ AWS Cloud Foundations · jun 2026 — ya lograda." },
+      { "icon": "🚀", "name": "Digitaliza Lab activo", "desc": "Optimizar perfil Google Negocios y captar 3–5 clientes locales en Puente Alto." }
+    ]
+  },
+  "dailySystem": {
+    "title": "⚡ Sistema Diario",
+    "subtitle": "Pequeñas acciones que construyen empleabilidad TI todos los días.",
+    "count": "~30-40 min/día",
+    "items": [
+      {
+        "icon": "🔗", "name": "LinkedIn · 10 min/día",
+        "desc": "Construir red profesional TI activa. Seguir reclutadores y empresas tecnológicas. Conectar con profesionales de datos, QA, soporte y ciberseguridad.",
+        "badges": ["Meta 2026: 500 conexiones"]
+      },
+      {
+        "icon": "💼", "name": "Mercado TI · 10 min/día",
+        "desc": "Revisar ofertas laborales activamente. Identificar tecnologías y habilidades demandadas. Detectar oportunidades de transición profesional.",
+        "badges": ["Alertas: LinkedIn · Computrabajo"]
+      },
+      {
+        "icon": "🇺🇸", "name": "Inglés · 10-20 min/día",
+        "desc": "Mantener progreso constante hacia B1. Duolingo diario + práctica de escritura con agente IA (lunes a viernes). Score Test semanal los domingos para medir tendencia real, no resultado puntual.",
+        "badges": ["Meta: B1 antes del 01 oct 2026", "B2 · dic 2027"],
+        "fullWidth": true
+      }
+    ],
+    "note": "💡 Regla del sistema diario: Durante la semana solo haces. Los domingos evalúas en 10 minutos. Separar 'hacer' de 'evaluar' reduce la ansiedad sin perder el seguimiento."
+  },
+  "digitalizaLab": {
+    "title": "🚀 Digitaliza Lab",
+    "subtitle": "Construcción lenta, constante y validada por el mercado.",
+    "count": "Modo mínimo · Fase 1",
+    "items": [
+      {
+        "icon": "📄", "name": "Portafolio activo",
+        "desc": "1 maqueta nueva por mes — distintos rubros para mostrar versatilidad técnica. Construcción continua de casos de estudio con métricas reales. 9 prompts de landing pages listos para ejecutar.",
+        "badges": ["3–5 proyectos documentados"]
+      },
+      {
+        "icon": "📱", "name": "Presencia digital",
+        "desc": "10 minutos diarios de interacción en Instagram. Mantener visibilidad de la marca. 1 publicación semanal programada desde banco de contenido ya preparado.",
+        "badges": ["Meta: 1 post/semana"]
+      },
+      {
+        "icon": "🏆", "name": "Postulaciones y financiamiento",
+        "desc": "Capital Semilla: quedé a solo 0,217 puntos del corte regional — resultado extraordinario para ser la primera vez. Capital Pioneras 2026: postulación enviada · esperando resultado. Abeja Emprende 2026: postulación enviada · esperando resultado.",
+        "badges": ["⏳ Resultados pendientes", "Formalizar: abr 2027"]
+      },
+      {
+        "icon": "🎯", "name": "Estrategia actual",
+        "desc": "Prioridad principal: formación TI (IPSS + Talento Digital). Digitaliza Lab se mantiene viva mientras se construye experiencia y empleabilidad. Si se obtiene financiamiento, aumentar foco e inversión.",
+        "badges": ["Práctica profesional · oct 2027"]
+      }
+    ],
+    "note": "✨ Norte estratégico: El objetivo no es crecer rápido. El objetivo es mantener Digitaliza Lab vivo mientras se construyen habilidades, experiencia y oportunidades de largo plazo."
+  },
+  "currentCourse": {
+    "title": "🔥 En curso ahora mismo",
+    "name": "Google Cybersecurity",
+    "module": "5-6 / 9",
+    "hours": "133h",
+    "deadline": "~5 jul 2026",
+    "impact": "Alto",
+    "progress": 61,
+    "progressText": "61% completado · módulo 5-6 de 9 · foco 100% (RH en pausa por ticket)"
+  },
+  "googleScholarship": {
+    "title": "Beca Google",
+    "subtitle": "Talento Digital Chile · 12 cursos · certificados + especializaciones",
+    "count": "~1.247h · vence 12 jun 2027",
+    "icon": "🎓",
+    "note": "🎯 Objetivo: Análisis de Datos primero porque aplica directo a tu trabajo en Falabella. Ritmo: 5h/día lun-vie. Terminas el #12 el 28 abr 2027 — 45 días antes del vencimiento.",
+    "warning": "⚠️ Regla de la beca: 30 días sin avance = riesgo de cancelación. Mantén actividad constante en el certificado activo aunque sea poco cada día.",
+    "groups": [
+      {
+        "id": "paused",
+        "title": "⏸ Pausados · ticket enviado",
+        "desc": "RH124 + RH134 — esperando acceso",
+        "open": false,
+        "courses": [
+          { "id": "g0", "name": "RH124 + RH134 — Linux Admin I & II", "vendor": "Red Hat", "status": "paused", "impact": "Alto", "date": "Se retoman apenas se resuelva el acceso", "badge": "Ticket enviado", "num": "⏸" }
+        ]
+      },
+      {
+        "id": "inprogress",
+        "title": "🔥 En curso · prioridad 1",
+        "desc": "Google Cybersecurity · módulo 5-6/9",
+        "open": true,
+        "courses": [
+          { "id": "g1", "name": "Google Cybersecurity", "vendor": "Google", "status": "in-progress", "impact": "Alto", "date": "Cierra ~5 jul 2026 · 133h", "module": "5-6/9", "num": "01" }
+        ]
+      },
+      {
+        "id": "pending",
+        "title": "📋 Pendientes · orden estratégico",
+        "desc": "11 cursos · cierran 28 abr 2027",
+        "open": true,
+        "courses": [
+          { "id": "g2", "name": "Análisis de Datos", "vendor": "Google", "status": "pending", "impact": "Alto", "date": "6 jul → 17 ago 2026 · 152h", "badge": "Aplica a tu trabajo", "num": "02", "buffer": "Semana de Buffer — transición Cybersecurity → Análisis de Datos" },
+          { "id": "g3", "name": "Análisis de Datos Avanzado", "vendor": "Google", "status": "pending", "impact": "Alto", "date": "18 ago → 29 sep 2026 · 153h", "badge": "Nuevo 2026", "num": "03", "buffer": "Semana de Buffer — descanso entre cursos pesados" },
+          { "id": "g4", "name": "Automatización de TI con Python", "vendor": "Google", "status": "pending", "impact": "Alto", "date": "30 sep → 6 nov 2026 · 134h", "badge": "Nuevo 2026", "num": "04" },
+          { "id": "g5", "name": "Soporte Tecnologías de la Información", "vendor": "Google", "status": "pending", "impact": "Alto", "date": "7 nov → 11 dic 2026 · 122h", "num": "05" },
+          { "id": "g6", "name": "Gestión de Proyectos", "vendor": "Google", "status": "pending", "impact": "Medio", "date": "12 dic 2026 → 20 ene 2027 · 141h", "num": "06", "buffer": "Semana de Buffer — fin de año, evaluaciones IPSS" },
+          { "id": "g7", "name": "Fundamentos de IA", "vendor": "Google", "status": "pending", "impact": "Medio", "date": "21 → 24 ene 2027 · 11h", "badge": "Especialización", "num": "07" },
+          { "id": "g8", "name": "Inteligencia Empresarial", "vendor": "Google", "status": "pending", "impact": "Medio", "date": "25 ene → 9 feb 2027 · 56h", "badge": "Especialización", "num": "08" },
+          { "id": "g9", "name": "Toma de Decisiones Basada en Datos", "vendor": "Google", "status": "pending", "impact": "Medio", "date": "10 → 17 feb 2027 · 25h", "badge": "Especialización", "num": "09" },
+          { "id": "g10", "name": "Fundamentos de Gestión de Personas", "vendor": "Google", "status": "pending", "impact": "Bajo", "date": "18 → 21 feb 2027 · 11h", "badge": "Especialización", "num": "10" },
+          { "id": "g11", "name": "Diseño de Experiencia de Usuario (UX)", "vendor": "Google", "status": "pending", "impact": "Bajo", "date": "22 feb → 25 mar 2027 · 112h", "num": "11" },
+          { "id": "g12", "name": "Marketing Digital e E-Commerce", "vendor": "Google", "status": "pending", "impact": "Bajo", "date": "26 mar → 28 abr 2027 · 120h ✅ cierre", "num": "12" }
+        ]
+      }
+    ]
+  },
+  "ipssAcademy": {
+    "title": "Academias IPSS",
+    "subtitle": "AWS · Cisco · Fortinet · Oracle · Red Hat — convenio gratuito hasta 2029",
+    "count": "22 cursos · ~1.110h",
+    "icon": "🏫",
+    "groups": [
+      {
+        "id": "completed",
+        "title": "✅ Completados · 6 cursos",
+        "desc": "Fortinet · AWS · Python · Oracle · IP",
+        "open": true,
+        "courses": [
+          { "id": "i1", "name": "Fortinet Certified Fundamentals (FCF)", "vendor": "Fortinet", "status": "done", "impact": "Alto", "date": "jun 2026", "num": "✅" },
+          { "id": "i2", "name": "AWS Cloud Foundations", "vendor": "AWS", "status": "done", "impact": "Alto", "date": "jun 2026", "badge": "AWS Academy Graduate", "num": "✅" },
+          { "id": "i3", "name": "Python Essentials 1", "vendor": "Cisco", "status": "done", "impact": "Medio", "date": "may 2026", "num": "✅" }
+        ]
+      }
+    ]
+  }
 }
