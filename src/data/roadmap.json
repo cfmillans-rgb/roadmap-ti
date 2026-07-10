@@ -150,6 +150,16 @@
           { "id": "i2", "name": "AWS Cloud Foundations", "vendor": "AWS", "status": "done", "impact": "Alto", "date": "jun 2026", "badge": "AWS Academy Graduate", "num": "✅" },
           { "id": "i3", "name": "Python Essentials 1", "vendor": "Cisco", "status": "done", "impact": "Medio", "date": "may 2026", "num": "✅" }
         ]
+      },
+      {
+        "id": "pending-ipss",
+        "title": "📋 Pendientes · (Reemplaza estos con tus cursos reales)",
+        "desc": "Agrega aquí los cursos que faltaron",
+        "open": true,
+        "courses": [
+          { "id": "i4", "name": "Ejemplo: CCNA 1", "vendor": "Cisco", "status": "pending", "impact": "Alto", "date": "dic 2026", "num": "04" },
+          { "id": "i5", "name": "Ejemplo: Oracle Cloud", "vendor": "Oracle", "status": "pending", "impact": "Medio", "date": "mar 2027", "num": "05" }
+        ]
       }
     ]
   }
